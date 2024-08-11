@@ -1,0 +1,32 @@
+.links {
+  max-width: 887px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
+
+  @media (max-width: 759px) {
+    justify-content: center;
+  }
+
+  .link {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+      border-bottom-color: #d64374;
+    }
+  }
+}

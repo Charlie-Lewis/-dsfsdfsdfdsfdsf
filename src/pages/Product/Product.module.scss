@@ -1,0 +1,62 @@
+.main {
+  background: #f8edf0;
+  padding: 0 10px;
+
+  .section {
+    max-width: 1171px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .container {
+      max-width: 442px;
+      width: 100%;
+      padding: 141px 0;
+
+      @media (max-width: 1117px) {
+        text-align: center;
+        background-image: url("/ice_cream_2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .title {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: clamp(1.688rem, -2.221rem + 19.54vw, 2.75rem);
+        line-height: 111%;
+      }
+
+      .text {
+        line-height: 150%;
+        margin: 16px 0 35px;
+      }
+
+      .btn {
+        border-radius: 5px;
+        background: #d64374;
+        padding: 15px 41px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fafafa;
+        border: none;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(21, 1, 1, 0.6);
+        }
+      }
+    }
+  }
+
+  .img {
+    @media (max-width: 1117px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Hind Madurai", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.mySwiper {
+  .swiper-wrapper {
+    align-items: center;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+      &-prev,
+      &-next {
+        img {
+          max-width: 35px;
+        }
+      }
+
+      &-active {
+        border: 2px solid #d64374;
+        border-radius: 50%;
+
+        img {
+          max-width: 57px;
+        }
+      }
+    }
+  }
+
+  .swiper-button {
+    &-prev {
+      left: -10px;
+
+      &::after {
+        content: url("/arrow_left.svg");
+        font-size: 0;
+      }
+    }
+
+    &-next {
+      right: -9px;
+
+      &::after {
+        content: url("/arrow_right.svg");
+        font-size: 0;
+      }
+    }
+  }
+}

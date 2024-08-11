@@ -1,0 +1,14 @@
+.section {
+  max-width: 1117px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    gap: 30px;
+  }
+}
